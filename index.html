@@ -1,61 +1,149 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Adam Valencia</title>
-  <meta name="keywords" content="Hamilton College, Junior, Adam Valencia">
-  <meta name="description" content="Adam Valencia's personal website">
-  <meta name="author" content="Adam Valencia">
-  <link rel="stylesheet" type = "text/css" href="assets/css/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Tea Cozy</title>
+  </head>
 
-<body>
-  <header>
-    <nav class="header">
-      <div class="name">
-        <span id="name"><h1>Adam Valencia</h1></span>
+  <body>
+    <!--Header-->
+    <header>
+      <nav>
+        <img class="logo"
+          src="./resources/images/PersonalHeadShot.jpg"
+          alt="Personal Logo"
+        />
+        <ul>
+          <li><a href="#about-me">Mission</a></li>
+          <li><a href="#projects">Featured Tea</a></li>
+          <li><a href="#locations">Locations</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+      <!--Mission-->
+      <section id="about-me">
+        <div class="background-image">
+          <div class="mission-text">
+            <h1>About Me</h1>
+            <p>
+                I am a first-generation graduate from Hamilton College with a B.A.
+                in Computer Science and Mathematics and a minor in Education.
+                I have a strong interest in software development with a focus 
+                on equal access to technological education. My passion is to 
+                aid in making technology as accessible to the most marginalized
+                people in The United States through development, opportunity, and 
+                community involvement.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Featured Teas-->
+      <section id="projects">
+        <h2>My Projects</h2>
+        <h4>A look at some of my college projects</h4>
+        <div class="tea-container">
+          <figure>
+            <a href="https://github.com/Advm/NamePronunciationProject">
+                <i class="fa fa-upload fa-4x"></i>
+            </a>
+            <figcaption>Name Pronunciation Project</figcaption>
+          </figure>
+          <figure>
+            <a href="https://github.com/Advm/NamePronunciationProject">
+                <i class="fa fa-upload fa-4x"></i>
+            </a>
+            <figcaption>Evolving SQL Queries</figcaption>
+          </figure>
+          <figure>
+            <a href="https://github.com/Advm/NamePronunciationProject">
+                <i class="fa fa-upload fa-4x"></i>
+            </a>
+            <figcaption>An Assembled Network</figcaption>
+          </figure>
+          <figure>
+            <a href="https://github.com/Advm/NamePronunciationProject">
+                <i class="fa fa-upload fa-4x"></i>
+            </a>
+            <figcaption>Myrtle Ave Tea</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="blog">
+        <h2>
+            Blog
+        </h2>
+        <div class = "scroll-container">
+            <div class="blog-border">
+                <p>
+                    I just finished the first version of my personal website! Although
+                    it has a long way to go, I am proud of the first edition. I am looking forward
+                    to updating, improving, and hopefully learning new schools that make the website more 
+                    functional!
+                </p>
+                <p class-="blog-footer">
+                    July 25, 2022
+                </p>
+            </div>
+            <div class="blog-border">
+                <p>
+                    Hello World!
+                </p>
+                <p class-="blog-footer">
+                    July 21, 2022
+                </p>
+            </div>
+        </div>
       </div>
-      <div class="nav links">
-      <ul>
-       <li><a
-       href="#about">About Me</a></li>
-       <li><a
-       href="#projects">Projects</a></li>
-       <li><a
-       href="#contact">Contact</a></li>
-     </ul>
-    </div>
-   </nav>
-  </header>
-  
-  <main>
-    <section id="about">
-      <dl>
-        <dt>Adam.city</dt><dd>Dallas, Texas</dd>
-        <dt>Adam.education</dt><dd>Hamilton College</dd>
-        <dt>Adam.major</dt><dd>Computer Science</dd>
-        <dt>Adam.minor</dt><dd>Mathematics and Education</dd>
-        <dt>Adam.resume</dt><dd><a href="Adam_Valencia.pdf" target="_blank">Adam Valencia Resume.pdf</a></dd>
-      </dl>
-      <p>This is me!</p>
-      <img src="./media/PersonalHeadShot.jpg" alt="A headshot of myself"/>
-    </section>
-    <section id="projects">
 
-    </section>
+      <!--Locations-->
+      <section id="location">
+        <div class="background-location">
+          <div>
+            <h2 class="location-title">Locations</h2>
+          </div>
+          <div class="location-card">
+            <h3>
+              <p>
+                <span>Downtown</span><br />384 West 4th St <br />Suite 108
+                <br />Portland, Maine
+              </p>
+            </h3>
+          </div>
+          <div class="location-card">
+            <h3>
+              <p>
+                <span>East Bayside</span><br />3433 Phisherman's Avenue
+                <br />(Northwest Corner) <br />Portland, Maine
+              </p>
+            </h3>
+          </div>
+          <div class="location-card">
+            <h3>
+              <p>
+                <span>Oakdale</span><br />515 Crescent Avenue <br />Second Floor
+                <br />Portland, Maine
+              </p>
+            </h3>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <footer class="footer">
-    <section id="contact">
-      <p>E-mail: avalenci@hamilton.edu</p>
-      <p>Phone: (929) 343-8424</p>
-      <p>Linkedin:<a href="https://www.linkedin.com/in/valencia2022/" target="_blank">Adam Valencia</a></p>
-    </section>
-    <section id="note">
-      <p>This is a very early iteration to my web design process. Please be patient as my website becomes more well defined. Thank you!</p>
-    </section>
-  </footer>
-</body>
-
+    <!--Footer-->
+    <footer>
+      <h2>The Tea Cozy</h2>
+      <h5>contact@theteacozy.com</h5>
+      <h5>917-555-8904</h5>
+      <h5 class="copyright">Copyright The Tea Cozy 2022</h5>
+    </footer>
+  </body>
 </html>
