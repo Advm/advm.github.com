@@ -10,8 +10,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     padding-top: 45px;
-    color: seashell;
-    background-color: rgb(29, 29, 29);
+    color: hsl(0, 0%, 71%);
+    background-color: hsl(0, 0%, 11%);
+    /* background-color: gree; */
     opacity: 0.9;
     text-align: center;
   }
@@ -25,28 +26,31 @@
     border-bottom: 1px solid seashell;
     box-shadow: 0 5px 20px 0 hsla(206, 85%, 5%);
     height: 69px;
-    background-color: rgb(29, 29, 29);
+    background-color: hsl(0, 0%, 11%);
     padding: 9.5px 10px;
     top: 0;
     z-index: 1;
-  }
-  
-  .logo {
-    height: 50px;
-    margin-left: 10px;
-    float: left;
   }
   
   /* Navigation */
   
   nav {
     width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
+  .profile {
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 6px;
+
+  }
+
   nav ul {
     display: inline-flex;
     list-style: none;
-    float: right;
     line-height: 50px;
   }
   
@@ -61,7 +65,7 @@
   }
   
   nav a:hover {
-    color: red;
+    color: hsl(0, 30%, 41%);;
   }
   
   /* Mission Section */
@@ -69,7 +73,7 @@
   .background-image {
     width: 90%;
     height: 400px;
-    background-image: url("/resources/images/hamilton-logo.jpeg");
+    background-image: url("../images/hamilton-logo.jpeg");
     background-size: cover;
     background-position: top;
     margin: 30px auto;
@@ -77,7 +81,7 @@
   }
   
   .mission-text {
-    background-color: rgb(29, 29, 29);
+    background-color: hsl(0, 0%, 11%);
     margin: auto;
     padding: .75rem 10rem;
     font-size: 32px;
@@ -89,56 +93,73 @@
     padding-bottom: 1.2rem;
   }
   
-  /* Tea Section */
+  /* Project Section */
   
-  .tea-container {
+  .project-container {
     /* width: 1000px; */
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin: auto;
   }
   
-  /* .fa {
+  #projects .item-border {
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 30%, 21%);
+  }
+
+  /* .project-container a {
     width: 300px;
     height: 200px;
   } */
-  .tea-container a {
-    width: 300px;
-    height: 200px;
-  }
+
   
-  .tea-container figcaption {
+  .project-container img {
+    filter: grayscale(100%);
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    transition: all 500ms ease-out 0s;
+  }
+
+  .project-container img:hover {
+    filter: none;
+    /* width: 250px;
+    height: 250px;
+    border-radius: 6px; */
+  }
+
+  .project-container figcaption {
     display: flex;
-    padding: 10px 8px 20px 8px;
-  }
-  
-  #featured-tea h2,
-  h4 {
-    padding-bottom: 20px;
-  }
-  
-  #featured-tea {
-    padding: 40px;
+    justify-content: center;
+    padding: 10px 8px 2px 8px;
   }
   
   /*  Blog */
   #blog h2 {
-    margin-bottom: 10px;
+    margin: 10px 0px;
+    font-size: 1.75rem;
   }
+
   .scroll-container {
-    width: 40rem;
     max-height: 20rem;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     text-align: center;
     overflow-y: scroll;
     scroll-behavior: smooth;  
     margin: 0 auto;
+    width: 60%;
+    /* padding: 1rem 20%; */
   }
 
-  .blog-border {
+  #blog .item-border {
+    width: 100%;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 32px;
@@ -146,26 +167,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: grey;
-    width: 50vw;
+    background-color: hsl(0, 30%, 21%);
   }
 
-  .blog-border p {
-    /* margin: .25rem 1rem; */
-    /* padding: .5rem; */
+  .item-border p {
+    padding: .5rem;
     font-size: 1rem;
   }
 
   .blog-footer {
-    /* display: inline-flex; */
-    /* justify-content: flex-end; */
+    /* padding-top: 2rem; */
   }
 
-  /* Locations */
+  /* Locations
   .background-location {
     width: 90%;
     height: 500px;
-    background-image: url("../images/img-locations-background.jpg");
+    background-image: url("../images/hamilton-logo.jpeg");
     background-size: cover;
     background-position: center;
     opacity: 0.8;
@@ -174,7 +192,7 @@
     display: block;
     align-items: center;
     justify-content: center;
-  }
+  } 
   
   .location-title {
     display: block;
@@ -183,7 +201,7 @@
   }
   
   .location-card {
-    /* width: 300px; */
+    width: 300px;
     height: 250px;
     background-color: black;
     display: inline-flex;
@@ -207,17 +225,19 @@
     font-size: 22px;
     font-weight: 300;
   }
-
+  */
   
   /*  Footer */
   
   footer {
-    height: 200px;
-    line-height: 2.5;
+    margin: 2rem 0rem;
+    /* height: 200px; */
+    font-size: 1rem;
+    /* line-height: 2.5; */
   }
   
-  .copyright {
+  /* .copyright {
     text-align: left;
     padding-left: 20px;
   }
-  
+   */
